@@ -11,6 +11,7 @@ This git repository is created for cloud classification project. "cloud_subpixel
     - [**I - Clone the repository**](#i---clone-the-repository)
     - [**II - Set up the virtual environment**](#ii---set-up-the-virtual-environment)
     - [**III - Install python packages**](#iii---install-python-packages)
+    - [**Download the data**](#download-the-data)
     - [**IV - Run the script**](#iv---run-the-script)
 
 ## Steps
@@ -27,4 +28,10 @@ This git repository is created for cloud classification project. "cloud_subpixel
    
             cloudclassify-venv\Scripts\activate.bat
 #### **III - Install python packages**
+      
+            pip install TensorFlow scipy scikit-learn matplotlib       
+
+#### **Download the data**
+Use the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) to download the data
+
 #### **IV - Run the script**
