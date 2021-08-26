@@ -1,17 +1,20 @@
 ## Introduction
 This git repository is created for cloud classification project. "cloud_subpixel" script is to train the DNN model for detecting cloudy pixels of Cross-track Infrared sounder using the top 75 Principal Components (PC)of it's spectrum 
 
-  - [Steps](#steps)
-    - [**I - Software requirements**](#i---software-requirements)
+## **I - Software requirements**
+1. Python 3.7 or above
+2. Python IDE (Visual Studio Code)
+
+- [Introduction](#introduction)
+- [**I - Software requirements**](#i---software-requirements)
+- [Steps](#steps)
     - [**II - Clone the repository**](#ii---clone-the-repository)
     - [**III - Set up the virtual environment**](#iii---set-up-the-virtual-environment)
     - [**IV - Install python packages**](#iv---install-python-packages)
     - [**V - Run the script**](#v---run-the-script)
 
-### Steps
-#### **I - Software requirements**
-1. Python 3.7 or above
-2. Python IDE (Visual Studio Code)
+## Steps
+
 #### **II - Clone the repository**
 
 #### **III - Set up the virtual environment**
