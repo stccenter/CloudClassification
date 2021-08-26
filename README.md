@@ -11,16 +11,16 @@ This git repository is created for cloud classification project. "cloud_subpixel
     - [**I - Clone the repository**](#i---clone-the-repository)
     - [**II - Set up the virtual environment**](#ii---set-up-the-virtual-environment)
     - [**III - Install python packages**](#iii---install-python-packages)
-    - [**Download the data**](#download-the-data)
-    - [**IV - Run the script**](#iv---run-the-script)
+    - [**IV Download the data**](#iv-download-the-data)
+    - [**V - Run the script**](#v---run-the-script)
 
 ## Steps
 
 #### **I - Clone the repository**
 
 #### **II - Set up the virtual environment**
-1. Create a new folder and name it as cloudclassify
-2. Copy and paste the cloud_subpixel.py and cloud_pc.sav files inside cloudclassify folder
+1. Create a new folder and name it as cloudclassify.
+2. Copy cloud_subpixel.py from cloned repository and place it inside cloudclassify folder.
 3. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "cloudclassify-venv"
    
             python -m venv cloudclassify-venv
@@ -31,7 +31,9 @@ This git repository is created for cloud classification project. "cloud_subpixel
       
             pip install TensorFlow scipy scikit-learn matplotlib       
 
-#### **Download the data**
-Use the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) to download the data
+#### **IV Download the data**
+1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
+2. Place the downloaded the cloud_pc.sav file inside cloudclassify folder
 
-#### **IV - Run the script**
+#### **V - Run the script**
+Now, we are all set to run the script.
