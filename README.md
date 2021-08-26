@@ -19,9 +19,9 @@ This git repository is created for cloud classification project. "cloud_subpixel
 2. Copy and paste the cloud_subpixel.py and cloud_pc.sav files inside cloudclassify folder
 3. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "cloudclassify-venv"
    
-            **python -m venv cloudclassify-venv** 
+            python -m venv cloudclassify-venv
 4. For Windows, run below line to activate the virtual environment
    
-            **cloudclassify-venv\Scripts\activate.bat**
+            cloudclassify-venv\Scripts\activate.bat
 #### **IV - Install python packages**
 #### **V - Run the script**
