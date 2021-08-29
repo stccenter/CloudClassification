@@ -26,7 +26,7 @@ This git repository is created for cloud classification project. This project is
             pip install TensorFlow scipy scikit-learn matplotlib       
 
 #### **IV Download the data**
-1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM target="_blank") and download the input data.
+1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
 2. Place the downloaded "cloud_pc.sav" file inside cloudclassify folder
 
 #### **V - Run the script**
