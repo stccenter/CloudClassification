@@ -42,9 +42,20 @@ Now, we are all set to run the script.
 
 #### **II - Download the train and test data and upload in GDrive**
 1. Go to the [data link](https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing).
-2. Download the "CloudClassificationGPU" to your local machine.
+2. Download all three folder to your local machine.
 3. Then upload it to your Google drive.
 
 #### **III - Mount the GDrive**
+1. Now go to the CloudClassifyGPU.ipynb notebook.
+2. Run the code block "Mount the Google drive".
+3. Click on the URL.
+    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/MountGdrive.PNG)
+4. Obtain the authorization code and paste it in the "Enter your authorization code" box.
+5. Verify Google drive is mounted correctly.
+   1. Click file icon in the left panel.
+   2. Click Mount Drive (third option).
+   3. Click "Connect to Google Drive" when it asks for permission. It takes few minutes to mount.
+   4. Once it is mounted, you should see drive folder. See screenshot below:
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/VerifyGdrive.png)
 
 #### **IV - Run the notebook**
