@@ -35,13 +35,13 @@ Now, we are all set to run the script.
 ### **GPU-based implementation**
 
 #### **I - Open Google Colab**
-1. Go to the [link](https://colab.research.google.com/notebooks/intro.ipynb#recent=true).
+1. Go to <a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true" target="_blank">Google Colab</a>.
 2. Click on the Upload tab.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GoogleColabUpload.png)
 3. Choose the "CloudClassifyGPU.ipynb" downloaded from the Git repository.
 
 #### **II - Download train and test data and upload them in your Google Drive**
-1. Go to the [data link](https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing).
+1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
 2. Download all three folder to your local machine.
 3. Then upload it to your Google drive.
 4. Create a new folder called "logs" inside the same folder where you uploaded the above three folders.
@@ -71,4 +71,6 @@ Now, we are all set to run the script.
 1. Run each code block sequentially.
 2. Note when you run the "GPU available" block, you should see below if GPU is properly enabled.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GPUEnabled.jpg)
+3. Please make sure to check your data path if you get an 
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/LoadDataPath.png)
 
