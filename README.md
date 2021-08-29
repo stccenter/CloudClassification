@@ -31,3 +31,16 @@ This git repository is created for cloud classification project. This project is
 
 #### **V - Run the script**
 Now, we are all set to run the script.
+
+### **GPU-based implementation**
+
+#### **I - Open Google Colab**
+1. Go to the [link](https://colab.research.google.com/notebooks/intro.ipynb#recent=true).
+2. Click on the Upload tab.
+   ![image](https://user-images.githubusercontent.com/86536464/125887893-a205773b-67d4-4d0d-b87a-5dc1e567bc99.png)
+
+#### **II - Download the train and test data and upload in GDrive**
+
+#### **III - Mount the GDrive**
+
+#### **IV - Run the notebook**
