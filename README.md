@@ -68,3 +68,7 @@ Now, we are all set to run the script.
    
 
 #### **IV - Run the notebook**
+1. Run each code block sequentially.
+2. Note when you run the "GPU available" block, you should see below if GPU is properly enabled.
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GPUEnabled.jpg)
+
