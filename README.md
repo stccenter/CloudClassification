@@ -40,10 +40,11 @@ Now, we are all set to run the script.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GoogleColabUpload.png)
 3. Choose the "CloudClassifyGPU.ipynb" downloaded from the Git repository.
 
-#### **II - Download the train and test data and upload in GDrive**
+#### **II - Download train and test data and upload them in your Google Drive**
 1. Go to the [data link](https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing).
 2. Download all three folder to your local machine.
 3. Then upload it to your Google drive.
+4. Create a new folder called "logs" inside the same folder where you uploaded the above three folders.
 
 #### **III - Mount the GDrive**
 1. Now go to the CloudClassifyGPU.ipynb notebook.
@@ -57,5 +58,13 @@ Now, we are all set to run the script.
    3. Click "Connect to Google Drive" when it asks for permission. It takes few minutes to mount.
    4. Once it is mounted, you should see drive folder. See screenshot below:
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/VerifyGdrive.png)
+
+#### **IV - Change Runtime to GPU**
+1. Go to Runtime in menu.
+2. Click "Change runtime type".
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/ChangeRunTime.png)
+3. In Notebook setting, change Hardware accelerator to "GPU" and click Save.
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png)
+   
 
 #### **IV - Run the notebook**
