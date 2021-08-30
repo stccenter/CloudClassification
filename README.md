@@ -56,16 +56,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 
 #### **III - Mount the GDrive**
 1. Now go to the CloudClassifyGPU.ipynb notebook.
-2. Run the code block "Mount the Google drive".
-3. Click on the URL.
-    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/MountGdrive.PNG)
-4. Obtain the authorization code and paste it in the "Enter your authorization code" box.
-5. Verify Google drive is mounted correctly.
-   1. Click file icon in the left panel.
-   2. Click Mount Drive (third option).
-   3. Click "Connect to Google Drive" when it asks for permission. It takes few minutes to mount.
-   4. Once it is mounted, you should see drive folder. See screenshot below:
-   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/VerifyGdrive.png)
+
 
 #### **IV - Change Runtime to GPU**
 1. Go to Runtime in menu.
@@ -79,6 +70,16 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 1. Run each code block sequentially.
 2. Note when you run the "GPU available" block, you should see below if GPU is properly enabled.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GPUEnabled.jpg)
-3. Please make sure to check your data path if you get an IOError in the below code block.
+3. When you the code block "Mount the Google drive".
+   1. Click on the URL.
+    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/MountGdrive.PNG)
+   2. Obtain the authorization code and paste it in the "Enter your authorization code" box.
+   3. Verify Google drive is mounted correctly.
+      1. Click file icon in the left panel.
+      2. Click Mount Drive (third option).
+      3. Click "Connect to Google Drive" when it asks for permission. It takes few minutes to mount.
+      4. Once it is mounted, you should see drive folder. See screenshot below:
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/VerifyGdrive.png)
+4. Please make sure to check your data path if you get an IOError in the below code block.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/LoadDataPath.png)
 
