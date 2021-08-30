@@ -72,7 +72,8 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 1. Run each code block sequentially.
 2. Note when you run the "GPU available" block, you should see below if GPU is properly enabled.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GPUEnabled.jpg)
-   Note: If you encounter Import error: cannot import name LayerNormalization, go to Runtime -> Factory Reset runtime. Then set "Hardware Accelerator" to GPU and save it.
+   Note: If you encounter Import error (screenshot below): cannot import name LayerNormalization, go to Runtime -> Factory Reset runtime. Then set "Hardware Accelerator" to GPU and save it.
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/Error.PNG)
    
 3. When you run the code block "Mount the Google drive".
    1. Click on the URL.
