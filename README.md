@@ -85,3 +85,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 4. Please make sure to check your data path if you get an IOError in the below code block.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/LoadDataPath.png)
 
+
+### **Videos**
+[<img src="https://github.com/stccenter/ArcCI/blob/master/Images/Thumbnail.PNG" width="60%">](https://youtu.be/vFepWVEbl0I)
+
