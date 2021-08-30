@@ -50,7 +50,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 
 #### **II - Download train and test data and upload them in your Google Drive**
 1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
-2. Download all three folder to your local machine.
+2. Download all three folders to your local machine.
 3. Then upload it to your Google drive.
 4. Create a new folder called "logs" inside the same folder where you uploaded the above three folders.
 
