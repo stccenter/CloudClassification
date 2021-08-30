@@ -54,11 +54,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 3. Then upload it to your Google drive.
 4. Create a new folder called "logs" inside the same folder where you uploaded the above three folders.
 
-#### **III - Mount the GDrive**
-1. Now go to the CloudClassifyGPU.ipynb notebook.
-
-
-#### **IV - Change Runtime to GPU**
+#### **III - Change Runtime to GPU**
 1. Go to Runtime in menu.
 2. Click "Change runtime type".
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/ChangeRunTime.png)
@@ -70,7 +66,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 1. Run each code block sequentially.
 2. Note when you run the "GPU available" block, you should see below if GPU is properly enabled.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GPUEnabled.jpg)
-3. When you the code block "Mount the Google drive".
+3. When you run the code block "Mount the Google drive".
    1. Click on the URL.
     ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/MountGdrive.PNG)
    2. Obtain the authorization code and paste it in the "Enter your authorization code" box.
