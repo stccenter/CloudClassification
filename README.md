@@ -23,7 +23,7 @@ This git repository is created for cloud classification project. This project is
             cloudclassify-venv\Scripts\activate.bat
 #### **III - Install python packages**
       
-            pip install TensorFlow scipy scikit-learn matplotlib       
+            pip install TensorFlow scipy scikit-learn matplotlib pandas   
 
 #### **IV Download the data**
 1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
@@ -39,6 +39,9 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 2. Run the script with flag "rainy cloud"
 
             python cloud_combine.py -f "rainy cloud"
+         
+#### **VI - Output**
+1. Once the script is finished running, you will find the output inside my_model folder.
 
 ### **GPU-based implementation**
 
