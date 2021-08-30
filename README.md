@@ -30,7 +30,14 @@ This git repository is created for cloud classification project. This project is
 2. Place the downloaded "cloud_pc.sav" file inside cloudclassify folder
 
 #### **V - Run the script**
-Now, we are all set to run the script.
+Now, we are all set to run the script. Run the script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
+1. Run the script with default value "detection"
+
+            python cloud_combine.py
+
+2. Run the script with flag "rainy cloud"
+
+            python cloud_combine.py -f "rainy cloud"
 
 ### **GPU-based implementation**
 
