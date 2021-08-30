@@ -53,6 +53,8 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 2. Download all three folders to your local machine.
 3. Then upload it to your Google drive.
 4. Create a new folder called "logs" inside the same folder where you uploaded the above three folders.
+5. Finally, your folder should have four folders. See screenshot below:
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GDriveFolders.png)
 
 #### **III - Change Runtime to GPU**
 1. Go to Runtime in menu.
