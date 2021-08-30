@@ -22,8 +22,9 @@ This git repository is created for cloud classification project. This project is
    
             cloudclassify-venv\Scripts\activate.bat
 #### **III - Install python packages**
-      
-            pip install TensorFlow scipy scikit-learn matplotlib pandas   
+Use the following command to install all necessary packages at once:
+
+            pip install -r requirements.txt     
 
 #### **IV Download the data**
 1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
