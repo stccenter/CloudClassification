@@ -43,7 +43,8 @@ Run the cloud_combine.py script using below command. This script accepts an argu
          
 #### **VI - Output**
 1. Once the script is finished running, you will find the output inside my_model folder.
-   ![image]
+   The accuracy of the model is 86.90% and it took 91.69 minutes to finish.
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/CPUOutput.png)
 
 ### **GPU-based implementation**
 
