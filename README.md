@@ -87,6 +87,6 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 
 
 ### **Videos**
-**CPU-based implementation**
+**CPU-based implementation**\
 [<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/Videos.jpg" width="60%">](https://youtu.be/vFepWVEbl0I)
 
