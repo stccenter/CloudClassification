@@ -95,7 +95,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 1. You will find the output inside the folder "my_model".
 
 
-## **Videos**
+## **Walkthrough Video**
 **CPU-based implementation**\
 [<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/Videos.jpg" width="60%">](https://youtu.be/vFepWVEbl0I)\
 
