@@ -145,8 +145,21 @@ The following steps are based on G4dn instance.
    
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
 
-#### **2. Install CUDA**
+   7. Create a registry value in the HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global key with the name vGamingMarketplace, the type DWord, and the value 2.
+      1. Use the 64-bit version of Powershell and run the below PowerShell command.
 
+         New-ItemProperty -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global" -Name "vGamingMarketplace" -PropertyType "DWord" -Value "2"
+
+      2. Use the 64-bit version of Powershell and run the below PowerShell command.
+
+         reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v vGamingMarketplace /t REG_DWORD /d 2
+
+#### **2. Install CUDA**
+   1. Go to [NVIDIA website](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64) and select the version of CUDA that you need.
+   2. For **version**, choose and for **instance type**: choose exe (local)
+   3. Click download.
+   4. Double click the download exe file and follow the on-screen prompts.
+   5. Reboot the instance. 
 
 
 ## **3. Open Google Colab**
