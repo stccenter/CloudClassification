@@ -116,6 +116,14 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 #### **6. Output of the script**
 You will find the output inside the folder "my_model
 
+## **2. AWS g4dn instance with NVIDIA Tesla T4**
+### **Install NVIDIA drivers on Windows instances**
+Use this [link](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/install-nvidia-driver.html#nvidia-gaming-driver) to follow the installation options.
+The following steps are based on G4dn instance.
+
+
+
+
 
 ## **3. Open Google Colab**
 1. Go to <a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true" target="_blank">Google Colab</a>.
