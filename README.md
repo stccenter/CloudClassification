@@ -194,7 +194,7 @@ The following steps are based on G4dn instance.
 
 Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
 
-![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
+![image](https://github.com/stccenter/CloudClassification/blob/main/Images/gpu.PNG)
 
 
 ## **3. Open Google Colab**
