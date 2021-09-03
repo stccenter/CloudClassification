@@ -149,19 +149,19 @@ The following steps are based on G4dn instance.
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
 
    10. Create a registry value in the HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global key with the name vGamingMarketplace, the type DWord, and the value 2.
-      1. Use Powershell and run the below command.
+       1. Use Powershell and run the below command.
 
                New-ItemProperty -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global" -Name "vGamingMarketplace" -PropertyType "DWord" -Value "2"
 
-      2. Use Powershell and run the below command.
+       2.  Use Powershell and run the below command.
 
                reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v vGamingMarketplace /t REG_DWORD /d 2
 
-   11. Use Powershell and run the below command to download the certification file.
+       3.  Use Powershell and run the below command to download the certification file.
    
                Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertWindows_2021_10_2.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
 
-   12. Reboot the instance.
+   11. Reboot the instance.
 
 #### **2. Install CUDA**
    1. Go to [NVIDIA website](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64) and select the version of CUDA that you need.
