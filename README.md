@@ -139,33 +139,62 @@ The following steps are based on G4dn instance.
 
        ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/pscmd.PNG)
 
-   4. Navigate to the desktop and double-click the installation file to launch it. 
-   5. Follow the instructions to install the driver and reboot your instance as required. 
-   6. To verify that the GPU is working properly, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
+   4. Navigate to the desktop->NVIDIA  folder->windows->latest.
+   5. Extract the zip folder.
+   6. Double-click the installation file (exe) to launch it. 
+   7. Follow the instructions to install the driver
+   8. Reboot your instance as required. 
+   9. To verify that the GPU is working properly, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
    
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
 
-   7. Create a registry value in the HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global key with the name vGamingMarketplace, the type DWord, and the value 2.
-      1. Use the 64-bit version of Powershell and run the below PowerShell command.
+   10. Create a registry value in the HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global key with the name vGamingMarketplace, the type DWord, and the value 2.
+      1. Use Powershell and run the below command.
 
                New-ItemProperty -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global" -Name "vGamingMarketplace" -PropertyType "DWord" -Value "2"
 
-      2. Use the 64-bit version of Powershell and run the below PowerShell command.
+      2. Use Powershell and run the below command.
 
                reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v vGamingMarketplace /t REG_DWORD /d 2
 
-   8. Use the following command to download the certification file, rename the file GridSwCert.txt, and move the file to the Public Documents folder on your system drive. 
+   11. Use Powershell and run the below command to download the certification file.
    
                Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertWindows_2021_10_2.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
 
-   9. Reboot the instance.
+   12. Reboot the instance.
 
 #### **2. Install CUDA**
    1. Go to [NVIDIA website](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64) and select the version of CUDA that you need.
-   2. For **version**, choose and for **instance type**: choose exe (local)
+   2. For **version**, choose based on your windows type and for **instance type**: choose exe (local)
    3. Click download.
    4. Double click the download exe file and follow the on-screen prompts.
    5. Reboot the instance. 
+
+#### **3. Set up the virtual environment**
+   1. Create a new project folder and name it as per your wish. For example "cloudclassifygpu".
+   2. Go to Start menu and type “command prompt”.
+   3. Open command prompt. Change to your project folder.
+   4. Copy and paste the below line in your command prompt. This creates a virtual environment named “cloudclassify-gpu”. You can name virtual environment as per your wish.
+
+            python -m venv cloudclassify-gpu
+
+   5. Copy and paste below line in command prompt. This activates the virtual environment.
+
+            cloudclassify-gpu\Scripts\activate.bat
+
+#### **4. Install python packages**
+   1. In command prompt, copy and paste below line to install python packages.
+            
+            pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
+
+#### **5. Verify the installation of GPU and run the script**
+   1. In command prompt, run the python script using below command.
+   
+            python cloudcode.py
+
+Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
+
+![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
 
 ## **3. Open Google Colab**
