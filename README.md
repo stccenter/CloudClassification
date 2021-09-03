@@ -154,6 +154,12 @@ The following steps are based on G4dn instance.
 
                reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v vGamingMarketplace /t REG_DWORD /d 2
 
+   8. Use the following command to download the certification file, rename the file GridSwCert.txt, and move the file to the Public Documents folder on your system drive. 
+   
+               Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertWindows_2021_10_2.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
+
+   9. Reboot the instance.
+
 #### **2. Install CUDA**
    1. Go to [NVIDIA website](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64) and select the version of CUDA that you need.
    2. For **version**, choose and for **instance type**: choose exe (local)
