@@ -98,14 +98,17 @@ The GPU-based implementation is tested in three environments.
 
             cloudclassify-gpu\Scripts\activate.bat
 
-   6. Install python packages
-      1. In command prompt, copy and paste below line to install python packages.
+#### **6. Install python packages**
+    1. In command prompt, copy and paste below line to install python packages.
             
             pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
-   7. Verify the installation of GPU and run the script     
-       1. In command prompt, run the python script using below command.
 
-      Line #17 in the script shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
+#### **7. Verify the installation of GPU and run the script**
+    1. In command prompt, run the python script using below command.
+   
+            python cloudcode.py
+
+      Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
 #### **6. Output of the script**
