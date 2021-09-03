@@ -124,7 +124,6 @@ The following steps are based on G4dn instance.
    1. Connect to the Windows instance.
    2. Go to Start menu and open a PowerShell window.
    3. Copy and paste the below Powershell command. This command will download driver inside Desktop.
-      ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/pscmd.PNG)
    
                $Bucket = "nvidia-gaming"
                $KeyPrefix = "windows/latest"
@@ -138,12 +137,15 @@ The following steps are based on G4dn instance.
                   }
                }
 
+       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/pscmd.PNG)
+
    4. Navigate to the desktop and double-click the installation file to launch it. 
    5. Follow the instructions to install the driver and reboot your instance as required. 
    6. To verify that the GPU is working properly, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
+   
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
 
-#### **1. Install CUDA**
+#### **2. Install CUDA**
 
 
 
