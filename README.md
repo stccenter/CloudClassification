@@ -49,8 +49,8 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 
 ## **GPU-based implementation**
 The GPU-based implementation is tested in three environments.
-   1. In Windows Desktop with GPU
-   2. In AWS g4dn instance with NVIDIA Tesla T4
+   1. Windows Desktop with NVIDIA GeForce GTX 1650 Ti with Max-Q Design
+   2. AWS g4dn instance with NVIDIA Tesla T4
    3. Google Colab
    
 ## **1. Enabling GPU in Windows Desktop**
@@ -65,6 +65,7 @@ The GPU-based implementation is tested in three environments.
    3. Click on Search and download the driver. 
    4. Install downloaded NVIDIA driver. 
    5. You will find CUDA subfolder inside “NVIDIA GPU computing toolkit” folder inside C drive “Program Files” folder (C:\Program Files\NVIDIA GPU Computing Toolkit). 
+   
 #### **3. CUDA toolkit**
    1. Go to [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive).
    2. Find the latest release of CUDA Toolkit.
@@ -73,6 +74,7 @@ The GPU-based implementation is tested in three environments.
     ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/SelectTarget.png)
    4. Click download.
    5. Double click the downloaded exe file (Example: cuda_11.4.1_471.41_win10.exe) and follow the on-screen prompts.
+   
 #### **4. Download cuDNN library**
    1. Go to cuDNN [link](https://developer.nvidia.com/cudnn).
    2. Click Download cuDNN. If you are a first-time user, you need to create a user account and consent to the cuDNN Software License Agreement.
@@ -85,31 +87,31 @@ The GPU-based implementation is tested in three environments.
    8. Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64).
    
 #### **5. Set up the virtual environment**
-   1. Create a virtual environment in Anaconda. If you don’t have Anaconda in your machine, use the link to install Anaconda.
-   2. Create a new folder and name it as per your wish. 
-   3. Go to Start menu and type “command prompt”.
-   4. Open command prompt. Change to your project folder.
-   5. Copy and paste the below line in your command prompt. This creates a virtual environment named “cloudclassify-gpu”. You can name virtual environment as per your wish.
+   1. Create a new project folder and name it as per your wish. For example "cloudclassifygpu".
+   2. Go to Start menu and type “command prompt”.
+   3. Open command prompt. Change to your project folder.
+   4. Copy and paste the below line in your command prompt. This creates a virtual environment named “cloudclassify-gpu”. You can name virtual environment as per your wish.
 
             python -m venv cloudclassify-gpu
 
-   6. Copy and paste below line in command prompt. This activates the virtual environment.
+   5. Copy and paste below line in command prompt. This activates the virtual environment.
 
             cloudclassify-gpu\Scripts\activate.bat
 
-   7. Install python packages
+   6. Install python packages
       1. In command prompt, copy and paste below line to install python packages.
-   
+            
             pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
-
-   8. Verify the installation of GPU and run the script
+            
+    7. Verify the installation of GPU and run the script
       1. In command prompt, run the python script using below command.
 
             python cloudcode.py
 
       Line #17 in the script shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
+      ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
-   9.  Output of the script
+#### **6. Output of the script**
       1.  You will find the output inside the folder "my_model
 
 
