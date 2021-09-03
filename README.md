@@ -113,7 +113,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
 #### **6. Output of the script**
-    You will find the output inside the folder "my_model
+You will find the output inside the folder "my_model
 
 
 ## **3. Open Google Colab**
