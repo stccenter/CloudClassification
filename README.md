@@ -126,7 +126,7 @@ The following steps are based on G4dn instance.
    3. Copy and paste the below Powershell command. This command will download driver inside Desktop.
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/pscmd.PNG)
    
-         ```$Bucket = "nvidia-gaming"
+         $Bucket = "nvidia-gaming"
          $KeyPrefix = "windows/latest"
          $LocalPath = "$home\Desktop\NVIDIA"
          $Objects = Get-S3Object -BucketName $Bucket -KeyPrefix $KeyPrefix -Region us-east-1
