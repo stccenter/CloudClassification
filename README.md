@@ -104,7 +104,7 @@ The GPU-based implementation is tested in three environments.
             pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
             
     7. Verify the installation of GPU and run the script
-      1. In command prompt, run the python script using below command.
+       1. In command prompt, run the python script using below command.
 
             python cloudcode.py
 
