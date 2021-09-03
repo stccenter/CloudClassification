@@ -11,9 +11,9 @@ This project is implemented in two methods:
 
 ## **Standard CPU-based implementation**
 
-###### **Clone the repository**
+#### **Clone the repository**
 
-###### **Set up the virtual environment**
+#### **Set up the virtual environment**
 1. Create a new folder and name it as cloudclassify.
 2. Copy cloud_subpixel.py from cloned repository and place it inside cloudclassify folder.
 3. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "cloudclassify-venv"
@@ -22,16 +22,16 @@ This project is implemented in two methods:
 4. For Windows, run below line to activate the virtual environment
    
             cloudclassify-venv\Scripts\activate.bat
-###### **Install python packages**
+#### **Install python packages**
 Use the following command to install all necessary packages at once:
 
             pip install -r requirements.txt     
 
-###### **Download the data**
+#### **Download the data**
 1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
 2. Place the downloaded "cloud_pc.sav" file inside cloudclassify folder
 
-###### **Run the script**
+#### **Run the script**
 Now, we are all set to run the script. 
 Run the cloud_combine.py script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
 1. Run the script with default value "detection"
@@ -42,14 +42,14 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 
             python cloud_combine.py -f "rainy cloud"
          
-###### **Output**
+#### **Output**
 1. Once the script is finished running, you will find the output inside my_model folder.
    The accuracy of the model is 86.90% and it took 91.69 minutes to finish.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/CPUOutput.png)
 
 ## **GPU-based implementation**
 ## **1. Enabling GPU in Windows Desktop**
-1. Verify graphic card details. 
+#### *Verfiy graphic card details.
    1. Go to Windows Start menu and type device manager. Expand Display Adapters, graphic cards will be displayed. 
 2. Download and install the NVIDIA driver.
    1. Go to NVIDIA drive download link 
