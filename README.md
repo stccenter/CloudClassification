@@ -108,8 +108,8 @@ The GPU-based implementation is tested in three environments.
    
             python cloudcode.py
 
-    Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
-    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
+Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
+![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
 #### **6. Output of the script**
     You will find the output inside the folder "my_model
