@@ -11,9 +11,9 @@ This project is implemented in two methods:
 
 ## **Standard CPU-based implementation**
 
-#### **Clone the repository**
+#### **1. Clone the repository**
 
-#### **Set up the virtual environment**
+#### **2. Set up the virtual environment**
 1. Create a new folder and name it as cloudclassify.
 2. Copy cloud_subpixel.py from cloned repository and place it inside cloudclassify folder.
 3. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "cloudclassify-venv"
@@ -22,16 +22,16 @@ This project is implemented in two methods:
 4. For Windows, run below line to activate the virtual environment
    
             cloudclassify-venv\Scripts\activate.bat
-#### **Install python packages**
+#### **3. Install python packages**
 Use the following command to install all necessary packages at once:
 
             pip install -r requirements.txt     
 
-#### **Download the data**
+#### **4. Download the data**
 1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
 2. Place the downloaded "cloud_pc.sav" file inside cloudclassify folder
 
-#### **Run the script**
+#### **5. Run the script**
 Now, we are all set to run the script. 
 Run the cloud_combine.py script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
 1. Run the script with default value "detection"
@@ -48,22 +48,27 @@ Run the cloud_combine.py script using below command. This script accepts an argu
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/CPUOutput.png)
 
 ## **GPU-based implementation**
+The GPU-based implementation is tested in three environments.
+   1. In Windows Desktop with GPU
+   2. In AWS g4dn instance with NVIDIA Tesla T4
+   3. Google Colab
+   
 ## **1. Enabling GPU in Windows Desktop**
-#### *Verfiy graphic card details.
+#### **1. Verfiy graphic card details.
    1. Go to Windows Start menu and type device manager. Expand Display Adapters, graphic cards will be displayed. 
-2. Download and install the NVIDIA driver.
+#### **2. Download and install the NVIDIA driver**
    1. Go to NVIDIA drive download link 
    2. Provide NVIDIA driver details according to your NVIDIA product. Below screenshot shows the selection based on “NVIDIA GeForce GTX 1640 Ti with Max-Q Design”.
    3. Click on Search and download the driver. 
    4. Install downloaded NVIDIA driver. 
    5. You will find CUDA subfolder inside “NVIDIA GPU computing toolkit” folder inside C drive “Program Files” folder (C:\Program Files\NVIDIA GPU Computing Toolkit). 
-3. CUDA toolkit
+#### **3. CUDA toolkit**
    1. a.	Go to CUDA Toolkit Archive.
    2. Find the latest release of CUDA Toolkit.
    3. Select the Operating System (Linux or Windows), architecture, and version based on your machine preference.
    4. Click download.
    5. Double click the downloaded exe file (Example: cuda_11.4.1_471.41_win10.exe) and follow the on-screen prompts.
-4. Download cuDNN library
+#### **4. Download cuDNN library**
    1. Go to cuDNN link.
    2. Click Download cuDNN. If you are a first-time user, you need to create a user account and consent to the cuDNN Software License Agreement.
    3. Select the right version of cuDNN. Please note that the version of CUDA and cuDNN should match. In this case, we should download version 11.
@@ -72,7 +77,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
    6. Now, copy cudnn64_8.dll from the bin of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\bin) and paste it in the bin folder inside CUDA folder of NVIDIA GPU Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin).
    7. Copy cudnn.h file from include of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\include) and paste it in the bin folder inside CUDA folder of NVIDIA_GPU_Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include).
    8. Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64).
-5. Set up the virtual environment
+#### **5. Set up the virtual environment**
    1. Create a virtual environment in Anaconda. If you don’t have Anaconda in your machine, use the link to install Anaconda.
    2. Create a new folder and name it as per your wish. 
    3. Go to Start menu and type “command prompt”.
@@ -101,7 +106,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
       1.  You will find the output inside the folder "my_model
 
 
-###### **Open Google Colab**
+## **3. Open Google Colab**
 1. Go to <a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true" target="_blank">Google Colab</a>.
 2. Click on the Upload tab.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GoogleColabUpload.png)
