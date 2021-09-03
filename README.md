@@ -6,7 +6,7 @@ This project is implemented in two methods:
 
 
 ## **Software requirements**
-1. Python 3.7 or above
+1. Python 3.8
 2. Python IDE (Visual Studio Code)
 
 ## **Standard CPU-based implementation**
@@ -14,16 +14,16 @@ This project is implemented in two methods:
 #### **1. Clone the repository**
 
 #### **2. Set up the virtual environment**
-1. Create a new folder and name it as cloudclassify.
+1. Create a new project folder and name it as per your wish. For example "cloudclassify".
 2. Copy cloud_subpixel.py from cloned repository and place it inside cloudclassify folder.
-3. In Visual Studio Code, go to Terminal and run the below in cmd terminal. This creates a virtual environment called "cloudclassify-venv"
+3. In command prompt, go to cloudclassify folder and run the below command. This creates a virtual environment called "cloudclassify-venv"
    
             python -m venv cloudclassify-venv
-4. For Windows, run below line to activate the virtual environment
+4. In command prompt, run below line to activate the virtual environment
    
             cloudclassify-venv\Scripts\activate.bat
 #### **3. Install python packages**
-Use the following command to install all necessary packages at once:
+Copy requirements.txt file from cloned repository and place it inside cloudclassify folder. Use the following command to install all necessary packages at once:
 
             pip install -r requirements.txt     
 
@@ -34,11 +34,11 @@ Use the following command to install all necessary packages at once:
 #### **5. Run the script**
 Now, we are all set to run the script. 
 Run the cloud_combine.py script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
-1. Run the script with default value "detection"
+1. In command prompt, run the script with default value "detection"
 
             python cloud_combine.py
 
-2. Run the script with flag "rainy cloud"
+2. In command prompt, run the script with flag "rainy cloud"
 
             python cloud_combine.py -f "rainy cloud"
          
@@ -53,7 +53,8 @@ The GPU-based implementation is tested in three environments.
    2. AWS g4dn instance with NVIDIA Tesla T4
    3. Google Colab
    
-## **1. Enabling GPU in Windows Desktop**
+## **1. Windows Desktop with NVIDIA GeForce GTX 1650 Ti with Max-Q Design**
+### **Enable and install GPU driver**
 #### **1. Verfiy graphic card details.**
    1. Go to Windows Start menu and type device manager. Expand Display Adapters, graphic cards will be displayed. 
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/DeviceManager.png)
