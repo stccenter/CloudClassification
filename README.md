@@ -120,8 +120,28 @@ You will find the output inside the folder "my_model
 ### **Install NVIDIA drivers on Windows instances**
 Use this [link](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/install-nvidia-driver.html#nvidia-gaming-driver) to follow the installation options.
 The following steps are based on G4dn instance.
+#### **1. Download and install the NVIDIA driver**
+   1. Connect to the Windows instance.
+   2. Go to Start menu and open a PowerShell window.
+   3. Copy and paste the below Powershell command. This command will download driver inside Desktop. (image)
+   
+      $Bucket = "nvidia-gaming"
+      $KeyPrefix = "windows/latest"
+      $LocalPath = "$home\Desktop\NVIDIA"
+      $Objects = Get-S3Object -BucketName $Bucket -KeyPrefix $KeyPrefix -Region us-east-1
+      foreach ($Object in $Objects) {
+         $LocalFileName = $Object.Key
+         if ($LocalFileName -ne '' -and $Object.Size -ne 0) {
+            $LocalFilePath = Join-Path $LocalPath $LocalFileName
+            Copy-S3Object -BucketName $Bucket -Key $Object.Key -LocalFile $LocalFilePath -Region us-east-1
+         }
+      }
 
+   4. Navigate to the desktop and double-click the installation file to launch it. 
+   5. Follow the instructions to install the driver and reboot your instance as required. 
+   6. To verify that the GPU is working properly, check Device Manager. (image)
 
+#### **1. Install CUDA**
 
 
 
