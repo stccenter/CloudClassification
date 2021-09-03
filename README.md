@@ -48,6 +48,58 @@ Run the cloud_combine.py script using below command. This script accepts an argu
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/CPUOutput.png)
 
 ## **GPU-based implementation**
+## **1. Enabling GPU in Windows Desktop**
+1. Verify graphic card details. 
+   1. Go to Windows Start menu and type device manager. Expand Display Adapters, graphic cards will be displayed. 
+2. Download and install the NVIDIA driver.
+   1. Go to NVIDIA drive download link 
+   2. Provide NVIDIA driver details according to your NVIDIA product. Below screenshot shows the selection based on “NVIDIA GeForce GTX 1640 Ti with Max-Q Design”.
+   3. Click on Search and download the driver. 
+   4. Install downloaded NVIDIA driver. 
+   5. You will find CUDA subfolder inside “NVIDIA GPU computing toolkit” folder inside C drive “Program Files” folder (C:\Program Files\NVIDIA GPU Computing Toolkit). 
+3. CUDA toolkit
+   1. a.	Go to CUDA Toolkit Archive.
+   2. Find the latest release of CUDA Toolkit.
+   3. Select the Operating System (Linux or Windows), architecture, and version based on your machine preference.
+   4. Click download.
+   5. Double click the downloaded exe file (Example: cuda_11.4.1_471.41_win10.exe) and follow the on-screen prompts.
+4. Download cuDNN library
+   1. Go to cuDNN link.
+   2. Click Download cuDNN. If you are a first-time user, you need to create a user account and consent to the cuDNN Software License Agreement.
+   3. Select the right version of cuDNN. Please note that the version of CUDA and cuDNN should match. In this case, we should download version 11.
+   4. d.	It will download as a compressed folder. Extract the compressed folder.
+   5. The extracted folder has “cuda” subfolder that matches with the “CUDA” subfolder in C:\Program Files\NVIDIA GPU Computing Toolkit.
+   6. Now, copy cudnn64_8.dll from the bin of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\bin) and paste it in the bin folder inside CUDA folder of NVIDIA GPU Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin).
+   7. Copy cudnn.h file from include of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\include) and paste it in the bin folder inside CUDA folder of NVIDIA_GPU_Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include).
+   8. Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64).
+5. Set up the virtual environment
+   1. Create a virtual environment in Anaconda. If you don’t have Anaconda in your machine, use the link to install Anaconda.
+   2. Create a new folder and name it as per your wish. 
+   3. Go to Start menu and type “command prompt”.
+   4. Open command prompt. Change to your project folder.
+   5. Copy and paste the below line in your command prompt. This creates a virtual environment named “cloudclassify-gpu”. You can name virtual environment as per your wish.
+
+         python -m venv cloudclassify-gpu
+
+   6. f.	Copy and paste below line in command prompt. This activates the virtual environment.
+
+         cloudclassify-gpu\Scripts\activate.bat
+
+   7. Install python packages
+      1. In command prompt, copy and paste below line to install python packages.
+   
+         pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
+
+   8. Verify the installation of GPU and run the script
+      1. In command prompt, run the python script using below command.
+
+         python cloudcode.py
+
+      Line #17 in the script shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
+
+   9. Output of the script
+      1.  You will find the output inside the folder "my_model
+
 
 ###### **Open Google Colab**
 1. Go to <a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true" target="_blank">Google Colab</a>.
