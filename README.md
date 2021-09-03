@@ -104,6 +104,7 @@ The GPU-based implementation is tested in three environments.
             pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
             
     7. Verify the installation of GPU and run the script
+   
        1. In command prompt, run the python script using below command.
 
             python cloudcode.py
@@ -112,7 +113,7 @@ The GPU-based implementation is tested in three environments.
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
 #### **6. Output of the script**
-      1.  You will find the output inside the folder "my_model
+    You will find the output inside the folder "my_model
 
 
 ## **3. Open Google Colab**
