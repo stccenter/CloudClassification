@@ -135,7 +135,7 @@ The following steps are based on G4dn instance.
                $LocalFilePath = Join-Path $LocalPath $LocalFileName
                Copy-S3Object -BucketName $Bucket -Key $Object.Key -LocalFile $LocalFilePath -Region us-east-1
             }
-         }```
+         }
 
    4. Navigate to the desktop and double-click the installation file to launch it. 
    5. Follow the instructions to install the driver and reboot your instance as required. 
