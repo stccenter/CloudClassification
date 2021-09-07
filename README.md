@@ -117,7 +117,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 #### **6. Output of the script**
 1. Once the script is finished running, you will find the output inside my_model folder.
    The accuracy of the model is 86.54% and it took 122.73 minutes to finish.
-https://github.com/stccenter/CloudClassification/blob/main/Images/output_gpu_laptop.png
+![image](https://github.com/stccenter/CloudClassification/blob/main/Images/output_gpu_laptop.png)
 
 ## **2. AWS g4dn instance with NVIDIA Tesla T4**
 ### **Install NVIDIA drivers on Windows instances**
