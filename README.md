@@ -113,6 +113,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
+
 #### **6. Output of the script**
 You will find the output inside the folder "my_model
 
@@ -195,7 +196,6 @@ The following steps are based on G4dn instance.
 Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
 
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/gpu.PNG)
-
 
 #### **6. Output**
 1. Once the script is finished running, you will find the output inside my_model folder.
