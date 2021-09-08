@@ -208,8 +208,12 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/gpu.PNG)
 
 #### **6. Output**
-1. Once the script is finished running, you will find the output inside my_model folder.
-   The accuracy of the model is 86.48% and it took 243.54 minutes to finish.
+1. The model weights can be found inside my_model folder.
+2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the terminal when the process finishes.
+   | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
+   |--------|--------|--------|--------|--------|----------|
+   | 0.6816 | 0.0436 | 0.1134 | 0.7687 | 0.6269 | 0.8648   | 
+3. The accuracy of the model is 86.48% and it took 243.54 minutes to finish.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/output_gpu_aws.PNG)
 
 
