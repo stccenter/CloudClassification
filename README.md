@@ -223,7 +223,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GoogleColabUpload.png)
 3. Choose the "CloudClassifyGPU.ipynb" downloaded from the Git repository.
 
-#### **Download train and test data and upload them in your Google Drive**
+#### **1. Download train and test data and upload them in your Google Drive**
 1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
 2. Download all three folders to your local machine.
 3. Then upload it to your Google drive.
@@ -231,7 +231,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 5. Finally, your folder should have four folders. See screenshot below:
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GDriveFolders.png)
 
-#### **Change Runtime to GPU**
+#### **2. Change Runtime to GPU**
 1. Go to Runtime in menu.
 2. Click "Change runtime type".
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/ChangeRunTime.png)
@@ -239,7 +239,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png)
    
 
-#### **Run the notebook**
+#### **3. Run the notebook**
 1. Run each code block sequentially.
 2. Note when you run the "GPU available" block, you should see below if GPU is properly enabled.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GPUEnabled.jpg)
@@ -259,7 +259,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 4. Please make sure to check your data path if you get an IOError in the below code block.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/LoadDataPath.png)
 
-#### **Output**
+#### **4. Output**
 1. The model weights can be found inside the my_model folder.
 2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the code block.
    | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
