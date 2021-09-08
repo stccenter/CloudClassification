@@ -33,7 +33,7 @@ Copy requirements.txt file from cloned repository and place it inside cloudclass
 
 #### **5. Download train and test data**
    1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
-   2. Download all three folders to your local machine inside project folder.
+   2. Download all three folders to your local machine inside cloudclassify folder.
    
 #### **6. Run the script**
 Now, we are all set to run the script. 
