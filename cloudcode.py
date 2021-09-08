@@ -44,9 +44,9 @@ np.random.seed(SEED)
 RAIN_RATE = 2.0 # adjust rate between the two type, rainy and non-rainy
 N_PREDICTOR = 15 #adjust predictor numbers
 
-CLOUD_TRAIN_FOLDER = 'C:/Users/anush/Downloads/cloudclassification-20210829T130215Z-001/cloudclassification/train_10mm/'
-CLOUD_FLORENCE_FOLDER = 'C:/Users/anush/Downloads/cloudclassification-20210829T130215Z-001/cloudclassification/florence_10mm/'
-CLOUD_TEST_FOLDER = 'C:/Users/anush/Downloads/cloudclassification-20210829T130215Z-001/cloudclassification/test_10mm/'
+CLOUD_TRAIN_FOLDER = './train_10mm/'
+CLOUD_FLORENCE_FOLDER = './florence_10mm/'
+CLOUD_TEST_FOLDER = './test_10mm/'
 
 TIME = 'day'
 RAIN_CLOUD_FILENAME = TIME + '_rain_imerg.txt'
