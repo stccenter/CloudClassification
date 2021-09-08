@@ -31,7 +31,11 @@ Copy requirements.txt file from cloned repository and place it inside cloudclass
 1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
 2. Place the downloaded "cloud_pc.sav" file inside cloudclassify folder
 
-#### **5. Run the script**
+#### **5. Download train and test data**
+   1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
+   2. Download all three folders to your local machine inside project folder.
+   
+#### **6. Run the script**
 Now, we are all set to run the script. 
 Run the cloud_combine.py script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
 1. In command prompt, run the script with default value "detection"
@@ -42,7 +46,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 
             python cloud_combine.py -f "rainy cloud"
          
-#### **6. Output**
+#### **7. Output**
 1. The model weights can be found in inside my_model folder.
 2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the terminal when the process finishes.
    | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
