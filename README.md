@@ -42,7 +42,7 @@ Run the cloud_combine.py script using below command. This script accepts an argu
 
             python cloud_combine.py -f "rainy cloud"
          
-#### **Output**
+#### **6. Output**
 1. The model weights can be found in inside my_model folder.
 2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the terminal when the process finishes.
    | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
@@ -118,7 +118,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
 
-#### **6. Output of the script**
+#### **8. Output of the script**
 1. The model weights can be found inside my_model folder.
 2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the terminal when the process finishes.
    | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
