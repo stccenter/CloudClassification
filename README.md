@@ -43,8 +43,12 @@ Run the cloud_combine.py script using below command. This script accepts an argu
             python cloud_combine.py -f "rainy cloud"
          
 #### **Output**
-1. Once the script is finished running, you will find the output inside my_model folder.
-   The accuracy of the model is 86.90% and it took 91.69 minutes to finish.
+1. The model weights can be found in inside my_model folder.
+2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the terminal when the process finishes.
+   | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
+   |--------|--------|--------|--------|--------|----------|
+   | 0.6933 | 0.0431 | 0.1106 | 0.7795 | 0.6382 | 0.8690   |
+3. The accuracy of the model is 86.90% and it took 91.69 minutes to finish. 
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/CPUOutput.png)
 
 ## **GPU-based implementation**
@@ -88,7 +92,7 @@ The GPU-based implementation is tested in three environments.
    8. Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64).
    
 #### **5. Set up the virtual environment**
-   1. Create a new project folder and name it as per your wish. For example "cloudclassifygpu".
+   1. Create a new project folder and name it as per your wish. For example "cloudclassify-gpu".
    2. Go to Start menu and type “command prompt”.
    3. Open command prompt. Change to your project folder.
    4. Copy and paste the below line in your command prompt. This creates a virtual environment named “cloudclassify-gpu”. You can name virtual environment as per your wish.
