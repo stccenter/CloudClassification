@@ -7,7 +7,7 @@ This project is implemented in two methods:
 
 ## **Software requirements**
 1. Python 3.8
-2. Python IDE (Visual Studio Code)
+2. Python IDE
 
 ## **Standard CPU-based implementation**
 
@@ -260,8 +260,12 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/LoadDataPath.png)
 
 ###### **Output**
-1. You will find the output inside the folder "my_model". The accuracy of the model is 86.74% and it took 91.62 minutes to finish.
-
+1. The model weights can be found inside the my_model folder.
+2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the code block.
+   | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
+   |--------|--------|--------|--------|--------|----------|
+   | 0.6903 | 0.0440 | 0.1131 | 0.7783 | 0.6344 | 0.8674   |
+3. The accuracy of the model is 86.74% and it took 91.62 minutes to finish.
 
 ## **Walkthrough Video**
 **CPU-based implementation**\
