@@ -281,9 +281,9 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 
 ## **Walkthrough Video**
 **CPU-based implementation**\
-[<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/Videos.jpg" width="60%">](https://youtu.be/vFepWVEbl0I)\
+[<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/Videos.jpg" width="60%">](https://youtu.be/6mvsTfZtE-M)\
 
 **GPU-based implementation**\
-[<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png" width="60%">](https://youtu.be/NL5uXG8uBfo)
+[<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png" width="60%">](https://youtu.be/Pzlsyb4s5yQ)
 
 
