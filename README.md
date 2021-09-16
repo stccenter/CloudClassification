@@ -1,10 +1,10 @@
 # **Introduction: Cloud Classification**
 
 This project is implemented in two methods:
-1. Standard CPU based - "cloud_combine.py" script is to train the DNN model for detecting cloudy pixels of Cross-track Infrared sounder using the top 75 Principal Components (PC)of it's spectrum.
+1. Standard CPU based - "cloud_combine.py" script is to train the DNN model for detecting cloudy pixels of Cross-track Infrared sounder using the top 75 Principal Components (PC) of it's spectrum.
 2. GPU based
 
-[A playlist detailing the installation process may be found at this link](https://www.youtube.com/watch?v=PWfKHJiPzwA&list=PL-Pci1bSZhnyKDZbl-q08K9wvMbK-5jaa&index=1)
+[A playlist detailing the installation process may be found at this link](https://www.youtube.com/watch?v=PWfKHJiPzwA&list=PL-Pci1bSZhnyKDZbl-q08K9wvMbK-5jaa&index=1).
 
 ## **Software requirements**
 1. Python 3.8
