@@ -26,7 +26,7 @@ This project is implemented in two methods:
 #### **3. Install python packages**
 Copy requirements.txt file from cloned repository and place it inside cloudclassify folder. Use the following command to install all necessary packages at once:
 
-            pip install -r requirements.txt     
+            pip install -r requirements_cpu.txt     
 
 #### **4. Download the data**
 1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the input data.
@@ -205,7 +205,7 @@ The following steps are based on G4dn instance.
 #### **4. Install python packages**
    1. In command prompt, copy and paste below line to install python packages.
             
-            pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
+            pip install -r requirements_gpu.txt
 
 #### **5. Download train and test data**
    1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
