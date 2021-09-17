@@ -115,7 +115,7 @@ The GPU-based implementation is tested in three environments.
 #### **7. Install python packages**
    1. In command prompt, copy and paste below line to install python packages.
             
-            pip install tensorflow-gpu==2.4.0 tensorboard==2.4.0 tensorboard-plugin-profile==2.4.0 scikit-learn pandas
+            pip install -r requirements_gpu.txt
 
 #### **8. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
