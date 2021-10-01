@@ -7,8 +7,10 @@ This project is implemented in two methods:
 [A playlist detailing the installation process may be found at this link](https://www.youtube.com/watch?v=PWfKHJiPzwA&list=PL-Pci1bSZhnyKDZbl-q08K9wvMbK-5jaa&index=1).
 
 ## **Software requirements**
-1. Python 3.8
+1. Python 3.7-3.8
 2. Python IDE
+
+Python 3.9 is incompatible with Tensorflow 2.4.0. Please download Python 3.7-3.8.
 
 ## **Standard CPU-based implementation**
 
