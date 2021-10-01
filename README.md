@@ -35,7 +35,7 @@ Copy requirements.txt file from cloned repository and place it inside cloudclass
 
 #### **5. Download train and test data**
    1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
-   2. Download all three folders to your local machine inside cloudclassify folder.
+   2. Download all four folders to your local machine inside cloudclassify folder.
    
 #### **6. Run the script**
 Now, we are all set to run the script. 
@@ -111,7 +111,7 @@ The GPU-based implementation is tested in three environments.
 
 #### **6. Download train and test data**
    1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
-   2. Download all three folders to your local machine inside project folder.
+   2. Download all four folders to your local machine inside project folder.
 
 #### **7. Install python packages**
    1. In command prompt, copy and paste below line to install python packages.
@@ -210,7 +210,7 @@ The following steps are based on G4dn instance.
 
 #### **5. Download train and test data**
    1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
-   2. Download all three folders to your local machine inside project folder.
+   2. Download all four folders to your local machine inside project folder.
    
 #### **6. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
@@ -239,7 +239,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 
 #### **1. Download train and test data and upload them in your Google Drive**
 1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
-2. Download all three folders to your local machine.
+2. Download all four folders to your local machine.
 3. Then upload it to your Google drive.
 4. Create a new folder called "logs" inside the same folder where you uploaded the above three folders.
 5. Finally, your folder should have four folders. See screenshot below:
