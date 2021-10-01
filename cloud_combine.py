@@ -34,9 +34,9 @@ if __name__ == '__main__':
     flag = args.flag
     SEED = 0
     np.random.seed(SEED)
-    CLOUD_TRAIN_FOLDER = 'C:/Users/anush/Downloads/cloudclassification-20210829T130215Z-001/cloudclassification/train_10mm/'
-    CLOUD_FLORENCE_FOLDER = 'C:/Users/anush/Downloads/cloudclassification-20210829T130215Z-001/cloudclassification/florence_10mm/'
-    CLOUD_TEST_FOLDER = 'C:/Users/anush/Downloads/cloudclassification-20210829T130215Z-001/cloudclassification/test_10mm/'
+    CLOUD_TRAIN_FOLDER = './train_10mm/'
+    CLOUD_FLORENCE_FOLDER = './florence_10mm/'
+    CLOUD_TEST_FOLDER = './test_10mm/'
     TIME = 'day'
     RAIN_CLOUD_FILENAME = TIME + '_rain_imerg.txt'
     NORAIN_CLOUD_FILENAME = TIME + '_norain_imerg.txt'  
@@ -136,7 +136,7 @@ if __name__ == '__main__':
         )
         print(len(x_train))
         estimator = KerasClassifier(build_fn=build_classifier)
-        LOGS = 'C:/Users/anush/Downloads/cloudclassification-20210829T130215Z-001/cloudclassification/logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")
+        LOGS = './logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")
 
         tboard_callback = tf.keras.callbacks.TensorBoard(
             log_dir = LOGS,
