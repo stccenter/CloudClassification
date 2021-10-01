@@ -123,7 +123,7 @@ def build_classifier():
   
 estimator = KerasClassifier(build_fn=build_classifier)
 
-LOGS = '/content/gdrive/MyDrive/cloudclassification/logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")
+LOGS = './logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")
 
 tboard_callback = tf.keras.callbacks.TensorBoard(
     log_dir = LOGS,
