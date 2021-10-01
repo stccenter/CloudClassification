@@ -136,7 +136,10 @@ if __name__ == '__main__':
         )
         print(len(x_train))
         estimator = KerasClassifier(build_fn=build_classifier)
-        LOGS = './logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")
+        logdir = './logs/'
+        if not os.path.exists(logdir):
+            os.mkdir(logdir)
+        LOGS = logdir + datetime.now().strftime("%Y%m%d-%H%M%S")
 
         tboard_callback = tf.keras.callbacks.TensorBoard(
             log_dir = LOGS,
