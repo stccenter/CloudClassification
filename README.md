@@ -241,8 +241,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
 2. Download all four folders to your local machine.
 3. Then upload it to your Google drive.
-4. Create a new folder called "logs" inside the same folder where you uploaded the above three folders.
-5. Finally, your folder should have four folders. See screenshot below:
+4. Finally, your folder should have four folders. See screenshot below:
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GDriveFolders.png)
 
 #### **2. Change Runtime to GPU**
