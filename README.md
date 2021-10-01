@@ -18,11 +18,10 @@ Python 3.9 is incompatible with Tensorflow 2.4.0. Please download Python 3.7-3.8
 
 #### **2. Set up the virtual environment**
 1. Create a new project folder and name it as per your wish. For example "cloudclassify".
-2. Copy cloud_subpixel.py from cloned repository and place it inside cloudclassify folder.
-3. In command prompt, go to cloudclassify folder and run the below command. This creates a virtual environment called "cloudclassify-venv"
+2. In command prompt, go to cloudclassify folder and run the below command. This creates a virtual environment called "cloudclassify-venv"
    
             python -m venv cloudclassify-venv
-4. In command prompt, run below line to activate the virtual environment
+3. In command prompt, run below line to activate the virtual environment
    
             cloudclassify-venv\Scripts\activate.bat
 #### **3. Install python packages**
