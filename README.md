@@ -75,7 +75,7 @@ The GPU-based implementation is tested in three environments.
     ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/NVIDIADriver.png)
    3. Click on Search and download the driver. 
    4. Install downloaded NVIDIA driver. 
-   5. You will find CUDA subfolder inside “NVIDIA GPU computing toolkit” folder inside C drive “Program Files” folder (C:\Program Files\NVIDIA GPU Computing Toolkit). 
+   5. You will find CUDA subfolder inside “NVIDIA GPU computing toolkit” folder inside this path C:\Program Files\NVIDIA GPU Computing Toolkit. 
    
 #### **3. CUDA toolkit**
    1. Go to [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive).
