@@ -1,7 +1,7 @@
 # **Introduction: Cloud Classification**
 
 This project is implemented in two methods:
-1. Standard CPU based - "cloud_combine.py" script is to train the DNN model for detecting cloudy pixels of Cross-track Infrared sounder using the top 75 Principal Components (PC) of it's spectrum.
+1. Standard CPU based - "cloudclassify-cpu.py" script is to train the DNN model for detecting cloudy pixels of Cross-track Infrared sounder using the top 75 Principal Components (PC) of it's spectrum.
 2. GPU based
 
 [A playlist detailing the installation process may be found at this link](https://www.youtube.com/watch?v=PWfKHJiPzwA&list=PL-Pci1bSZhnyKDZbl-q08K9wvMbK-5jaa&index=1).
@@ -39,14 +39,14 @@ Copy requirements.txt file from cloned repository and place it inside cloudclass
    
 #### **6. Run the script**
 Now, we are all set to run the script. 
-Run the cloud_combine.py script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
+Run the cloudclassify-cpu.py script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
 1. In command prompt, run the script with default value "detection"
 
-            python cloud_combine.py
+            python cloudclassify-cpu.py
 
 2. In command prompt, run the script with flag "rainy cloud"
 
-            python cloud_combine.py -f "rainy cloud"
+            python cloudclassify-cpu.py -f "rainy cloud"
          
 #### **7. Output**
 1. The model weights can be found in inside my_model folder.
@@ -121,10 +121,10 @@ The GPU-based implementation is tested in three environments.
 #### **8. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
    
-            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode.py
+            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py
 
-**Note:** In the above command set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode.py uses 4 GPUs. 
-For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudcode.py**. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
+**Note:** In the above command set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py uses 4 GPUs. 
+For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudclassify-gpu.py**. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
 
 Note: Line #10 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
 
@@ -218,11 +218,10 @@ The following steps are based on G4dn instance.
 #### **6. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
    
-            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode.py
+            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py
 
-   **Note:** In the above command, set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudcode.py
-
-   where 'X , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
+   **Note:** In the above command set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py uses 4 GPUs. 
+For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudclassify-gpu.py**. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
 
 Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
 
