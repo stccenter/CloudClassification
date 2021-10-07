@@ -10,7 +10,7 @@ This project is implemented in two methods:
 1. Python 3.7-3.8
 2. Python IDE
 
-Python 3.9 is incompatible with Tensorflow 2.4.0. Please download Python 3.7-3.8.
+**Note**: Python 3.9 is incompatible with Tensorflow 2.4.0. Please download Python 3.7-3.8.
 
 ## **Standard CPU-based implementation**
 
