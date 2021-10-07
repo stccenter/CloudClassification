@@ -7,7 +7,7 @@ import tensorflow as tf
 tf.test.gpu_device_name()
 
 from tensorflow.python.client import device_lib
-print(device_lib.list_local_devices())
+device_lib.list_local_devices()
 
 from datetime import datetime
 
@@ -27,9 +27,9 @@ from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.utils import to_categorical
-import time
 
 tensorflow.keras.__version__
+import time
 
 SEED = 0
 np.random.seed(SEED)
@@ -70,6 +70,7 @@ def load_data(folder, ratio):
   cloud_array = np.concatenate((new_rain_cloud_array, new_norain_cloud_array), axis=0)
   cloud_array = shuffle(cloud_array)
   return cloud_array
+
 
 start_time = time.time()
 cloud_train = load_data(CLOUD_TRAIN_FOLDER, ratio=RAIN_RATE)
@@ -113,9 +114,19 @@ def build_classifier():
   
   model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
   return model
-  
-estimator = KerasClassifier(build_fn=build_classifier)
 
+
+# Create a MirroredStrategy.
+strategy = tf.distribute.MirroredStrategy()
+print("Number of devices: {}".format(strategy.num_replicas_in_sync))
+
+# Open a strategy scope.
+with strategy.scope():
+    # Everything that creates variables should be under the strategy scope.
+    # In general this is only model construction & `compile()`.
+    estimator = KerasClassifier(build_fn=build_classifier)
+
+# Train and test the model on all available devices.
 LOGS = './logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")
 
 tboard_callback = tf.keras.callbacks.TensorBoard(
@@ -139,7 +150,7 @@ history = estimator.fit(
 
 # Commented out IPython magic to ensure Python compatibility.
 # %load_ext tensorboard
-# %tensorboard --logdir='/content/gdrive/MyDrive/cloudclassification/logs/'
+# %tensorboard --logdir='/att/nobackup/kswang/cloudClassification/logs/'
 
 train_loss = history.history['loss']
 val_loss = history.history['val_loss']
