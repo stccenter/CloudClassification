@@ -121,9 +121,11 @@ The GPU-based implementation is tested in three environments.
 #### **8. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
    
-            python cloudcode.py
+            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode.py
 
-Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
+**Note:** In the above command set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudcode.py uses 4 GPUs. 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
+
+Note: Line #10 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
 
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
 
@@ -215,7 +217,11 @@ The following steps are based on G4dn instance.
 #### **6. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
    
-            python cloudcode.py
+            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode.py
+
+   **Note:** In the above command, set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudcode.py
+
+   where 'X , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
 
 Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
 
