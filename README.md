@@ -124,7 +124,7 @@ The GPU-based implementation is tested in three environments.
             set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode.py
 
 **Note:** In the above command set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode.py uses 4 GPUs. 
-set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudcode.py. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
+For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudcode.py**. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
 
 Note: Line #10 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
 
