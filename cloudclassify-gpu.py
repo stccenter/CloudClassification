@@ -2,6 +2,7 @@
 
 import os
 os.environ['TF_GPU_THREAD_MODE'] = 'gpu_private'
+os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
 
 import tensorflow as tf
 tf.test.gpu_device_name()
