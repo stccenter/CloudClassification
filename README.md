@@ -194,7 +194,18 @@ The following steps are based on G4dn instance.
    4. Double click the download exe file and follow the on-screen prompts.
    5. Reboot the instance. 
 
-#### **3. Set up the virtual environment**
+#### **3. Download cuDNN library**
+   1. Go to cuDNN [link](https://developer.nvidia.com/cudnn).
+   2. Click Download cuDNN. If you are a first-time user, you need to create a user account and consent to the cuDNN Software License Agreement.
+   3. Select the right version of cuDNN. Please note that the version of CUDA and cuDNN should match. In this case, we should download version 11.
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/cudnn.png)
+   4. It will download as a compressed folder. Extract the compressed folder.
+   5. The extracted folder has “cuda” subfolder that matches with the “CUDA” subfolder in C:\Program Files\NVIDIA GPU Computing Toolkit.
+   6. Now, copy cudnn64_8.dll from the bin of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\bin) and paste it in the bin folder inside CUDA folder of NVIDIA GPU Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin).
+   7. Copy cudnn.h file from include of the extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\include) and paste it in the include folder inside CUDA folder of NVIDIA_GPU_Computing Toolkit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include).
+   8. Copy cudnn.lib file from lib/x64 folder inside extracted folder (C:\Users\anush\Downloads\cudnn-11.4-windows-x64-v8.2.2.26\cuda\lib\x64) and paste it in the similar folder of NVIDIA_GPU_Computing_Tookit (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\lib\x64).
+   
+#### **4. Set up the virtual environment**
    1. Create a new project folder and name it as per your wish. For example "cloudclassifygpu".
    2. Go to Start menu and type “command prompt”.
    3. Open command prompt. Change to your project folder.
@@ -206,16 +217,16 @@ The following steps are based on G4dn instance.
 
             cloudclassify-gpu\Scripts\activate.bat
 
-#### **4. Install python packages**
+#### **5. Install python packages**
    1. In command prompt, copy and paste below line to install python packages.
             
             pip install -r requirements_gpu.txt
 
-#### **5. Download train and test data**
+#### **6. Download train and test data**
    1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
    2. Download all four folders to your local machine inside project folder.
    
-#### **6. Verify the installation of GPU and run the script**
+#### **7. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
    
             set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py
@@ -227,7 +238,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/gpu.PNG)
 
-#### **7. Output**
+#### **8. Output**
 1. The model weights can be found inside my_model folder.
 2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the terminal when the process finishes.
    | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
