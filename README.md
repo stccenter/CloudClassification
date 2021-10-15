@@ -377,7 +377,7 @@ python cloudcode-multi-gpu.py
 ```
 **Note**:The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.
 
-Multi-GPU output:
+Multi-GPU output:\
 ![image](Images/multigpu_ubuntu_output.png)
 
 ---
@@ -392,7 +392,7 @@ Multi-GPU output:
 
 **Walkthrough Video for AWS Windows single GPU instance**
 
-[<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png" width="60%">](https://www.youtube.com/watch?v=Tj6OV5-izXw)
+[<img src="Images/singlegpu_windows_video.jpg" width="60%">](https://www.youtube.com/watch?v=Tj6OV5-izXw)
 
 **Walkthrough Video for AWS Windows multi-GPU instance**
 
