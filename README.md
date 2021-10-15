@@ -16,13 +16,14 @@ This project is implemented in two methods:
 - [**Introduction: Cloud Classification**](#introduction-cloud-classification)
   - [**Software requirements**](#software-requirements)
 - [For Windows](#for-windows)
+  - [**Standard CPU-based implementation**](#standard-cpu-based-implementation)
   - [**GPU-based implementation**](#gpu-based-implementation)
 - [For Ubuntu](#for-ubuntu)
-  - [GPU-based implementation](#gpu-based-implementation-1)
+  - [**GPU-based implementation**](#gpu-based-implementation-1)
 
 # For Windows
 
-**Standard CPU-based implementation**
+## **Standard CPU-based implementation**
 
 **1. Clone the repository**
 
@@ -316,7 +317,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 
 # For Ubuntu
 
-## GPU-based implementation
+## **GPU-based implementation**
 
 **Step 1** The AWS Deep Learning AMI comes with different versions of CUDA. Please switch to the correct CUDA version, **10.2**, by using the following commands:
 
