@@ -389,6 +389,8 @@ python cloudcode-multi-gpu.py
 
 **Walkthrough Video for AWS Windows single GPU instance**
 
+[<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png" width="60%">](https://www.youtube.com/watch?v=Tj6OV5-izXw)
+
 **Walkthrough Video for AWS Windows multi-GPU instance**
 
 
