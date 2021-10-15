@@ -17,13 +17,8 @@ This project is implemented in two methods:
   - [**Software requirements**](#software-requirements)
 - [For Windows](#for-windows)
   - [**GPU-based implementation**](#gpu-based-implementation)
-  - [**1. Windows Desktop with NVIDIA GeForce GTX 1650 Ti with Max-Q Design**](#1-windows-desktop-with-nvidia-geforce-gtx-1650-ti-with-max-q-design)
-    - [**Enable and install GPU driver**](#enable-and-install-gpu-driver)
-  - [**2. AWS g4dn instance with NVIDIA Tesla T4**](#2-aws-g4dn-instance-with-nvidia-tesla-t4)
-    - [**Install NVIDIA drivers on Windows instances**](#install-nvidia-drivers-on-windows-instances)
-  - [**3. Open Google Colab**](#3-open-google-colab)
 - [For Ubuntu](#for-ubuntu)
-  - [The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.](#the-program-will-output-the-runtime-alongside-metrics-such-as-accuracy-after-it-finishes-training-you-may-use-the-nvidia-smi-command-to-check-gpu-load)
+  - [GPU-based implementation](#gpu-based-implementation-1)
 
 # For Windows
 
@@ -78,8 +73,10 @@ The GPU-based implementation is tested in three environments.
    2. AWS g4dn instance with NVIDIA Tesla T4
    3. Google Colab
    
-## **1. Windows Desktop with NVIDIA GeForce GTX 1650 Ti with Max-Q Design**
-### **Enable and install GPU driver**
+---
+
+**1. Windows Desktop with NVIDIA GeForce GTX 1650 Ti with Max-Q Design**
+**Enable and install GPU driver**
  **1. Verfiy graphic card details.**
    1. Go to Windows Start menu and type device manager. Expand Display Adapters, graphic cards will be displayed. 
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/DeviceManager.png)
@@ -155,8 +152,10 @@ Note: Line #10 shows all the physical GPU devices available to TensorFlow. You s
 3. The accuracy of the model is 86.54% and it took 122.73 minutes to finish.
 ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/output_gpu_laptop.png)
 
-## **2. AWS g4dn instance with NVIDIA Tesla T4**
-### **Install NVIDIA drivers on Windows instances**
+---
+
+**2. AWS g4dn instance with NVIDIA Tesla T4**
+**Install NVIDIA drivers on Windows instances**
 Refer this [AWS help document](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/install-nvidia-driver.html#nvidia-gaming-driver) to follow the installation options.
 The following steps are based on G4dn instance.
  **1. Download and install the NVIDIA driver**
@@ -262,8 +261,9 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 3. The accuracy of the model is 86.48% and it took 243.54 minutes to finish.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/output_gpu_aws.PNG)
 
+---
 
-## **3. Open Google Colab**
+**3. Google Colab**
 1. Go to <a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true" target="_blank">Google Colab</a>.
 2. Click on the Upload tab.
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/GoogleColabUpload.png)
@@ -312,8 +312,11 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
    | 0.6903 | 0.0440 | 0.1131 | 0.7783 | 0.6344 | 0.8674   |
 3. The accuracy of the model is 86.74% and it took 91.62 minutes to finish.
 
+---
 
 # For Ubuntu
+
+## GPU-based implementation
 
 **Step 1** The AWS Deep Learning AMI comes with different versions of CUDA. Please switch to the correct CUDA version, **10.2**, by using the following commands:
 
@@ -367,10 +370,11 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python cloudclassify-gpu.py
 ```
 python cloudcode-multi-gpu.py
 ```
+**Note**:The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.
 
-The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.
 ---
-**Walkthrough Video**
+
+**Walkthrough Video for Windows**
 **CPU-based implementation**\
 [<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/Videos.jpg" width="60%">](https://youtu.be/6mvsTfZtE-M)\
 
