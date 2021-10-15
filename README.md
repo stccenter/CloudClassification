@@ -321,8 +321,12 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 
 **Step 1** The AWS Deep Learning AMI comes with different versions of CUDA. Please switch to the correct CUDA version, **10.2**, by using the following commands:
 
+```
 sudo rm /usr/local/cuda
+```
+```
 sudo ln -s /usr/local/cuda-10.2 /usr/local/cuda
+```
 
 After running both commands, verify your CUDA version by running NVIDIA's nvcc program:
 
@@ -375,11 +379,18 @@ python cloudcode-multi-gpu.py
 
 ---
 
-**Walkthrough Video for Windows**
-**CPU-based implementation**\
+**Walkthrough Video for Windows CPU-based implementation**
+
 [<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/Videos.jpg" width="60%">](https://youtu.be/6mvsTfZtE-M)\
 
-**Single GPU-based implementation**\
+**Walkthrough Video for Google Colab**
+
 [<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png" width="60%">](https://youtu.be/Pzlsyb4s5yQ)
+
+**Walkthrough Video for AWS Windows single GPU instance**
+
+**Walkthrough Video for AWS Windows multi-GPU instance**
+
+
 
 
