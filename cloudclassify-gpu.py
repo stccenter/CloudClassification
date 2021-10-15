@@ -133,7 +133,7 @@ LOGS = './logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")
 tboard_callback = tf.keras.callbacks.TensorBoard(
     log_dir = LOGS,
     histogram_freq = 1,
-    profile_batch = (2, 8)
+    profile_batch = '2, 8'
 )
 
 EPOCHS = 100

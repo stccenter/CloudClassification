@@ -129,7 +129,7 @@ tboard_callback = tf.keras.callbacks.TensorBoard(
     profile_batch = '2, 8'
 )
 
-EPOCHS = 1
+EPOCHS = 100
 
 history = model.fit(
     x_train,
@@ -153,6 +153,42 @@ val_acc = history.history['val_accuracy']
 
 accuracy_score = model.evaluate(x_test, y_test)
 #print("Accuracy: {0:f}".format(accuracy_score))
+
+
+'''
+predictions = model.predict(x_test)
+pred_test = list(predictions)
+pred_test = np.array(pred_test)
+
+flag_a = np.logical_and(labels_test == 1, pred_test == 1)
+A = labels_test[flag_a]
+a = len(A)
+
+flag_b = np.logical_and(labels_test == 0, pred_test == 1)
+B = labels_test[flag_b]
+b = len(B)
+
+flag_c = np.logical_and(labels_test == 1, pred_test == 0)
+C = labels_test[flag_c]
+c = len(C)
+
+flag_d = np.logical_and(labels_test == 0, pred_test == 0)
+D = labels_test[flag_d]
+d = len(D)
+
+PDO = 1.0 * a / (a + c)
+POFD = 1.0 * b / (b + d)
+FAR = 1.0 * b / (a + b)
+Bias = 1.0 * (a + b) / (a + c)
+CSI = 1.0 * a / (a + b + c)
+AM = 1.0 * (a + d) / (a + b + c + d)
+CC = 1.0 * d / (b + d)
+
+print(a, b, c, d)
+print(PDO, POFD, FAR, Bias, CSI, AM)
+
+model.model.save('my_model')
+'''
 
 
 print("--- %s seconds ---" % (time.time() - start_time))
