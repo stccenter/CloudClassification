@@ -8,7 +8,7 @@ This project is implemented in two methods:
 
 ## **Software requirements**
 1. Python 3.7-3.8
-2. CUDA 10.2
+2. CUDA
 3. TensorFlow 2.2
 
 **Note**: Python 3.9 is incompatible with Tensorflow 2.4.0. Please download Python 3.7-3.8.
@@ -378,7 +378,7 @@ python cloudcode-multi-gpu.py
 **Note**:The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.
 
 Multi-GPU output:
-![image](https://github.com/stccenter/CloudClassification/blob/main/Images/LoadDataPath.png)
+![image](Images/multigpu_ubuntu_output.png)
 
 ---
 
