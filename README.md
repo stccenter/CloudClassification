@@ -7,21 +7,22 @@ This project is implemented in two methods:
 [A playlist detailing the installation process may be found at this link](https://www.youtube.com/watch?v=PWfKHJiPzwA&list=PL-Pci1bSZhnyKDZbl-q08K9wvMbK-5jaa&index=1).
 
 ## **Software requirements**
-1. Python 3.7-3.8
+1. Python 3.7 or 3.8
 2. CUDA
 3. TensorFlow 2.2
 
-**Note**: Python 3.9 is incompatible with Tensorflow 2.4.0. Please download Python 3.7-3.8.
+**Note**: Python 3.9 is incompatible with Tensorflow 2.2.0. Please download Python 3.7 or 3.8.
 
 - [**Introduction: Cloud Classification**](#introduction-cloud-classification)
   - [**Software requirements**](#software-requirements)
-- [For Windows](#for-windows)
+- [**For Windows**](#for-windows)
   - [**Standard CPU-based implementation**](#standard-cpu-based-implementation)
   - [**GPU-based implementation**](#gpu-based-implementation)
-- [For Ubuntu](#for-ubuntu)
+- [**For Ubuntu**](#for-ubuntu)
   - [**GPU-based implementation**](#gpu-based-implementation-1)
+- [Videos](#videos)
 
-# For Windows
+# **For Windows**
 
 ## **Standard CPU-based implementation**
 
@@ -133,16 +134,17 @@ The GPU-based implementation is tested in three environments.
 
  **8. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
+
+      **For single GPU**
    
-            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py
+            set CUDA_VISIBLE_DEVICES=0 & python cloudclassify-gpu.py
 
-**Note:** In the above command set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py uses 4 GPUs. 
-For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudclassify-gpu.py**. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
+      **For multi-GPU**
 
-Note: Line #10 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
+            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode-multi-gpu.py
 
-![image](https://github.com/stccenter/CloudClassification/blob/main/Images/verifygpu.png)
-
+**Note:** While running the multi gpu code if you encounter this issue: No OpKernel was registered to support Op 'NcclAllReduce, please change line #109 to
+strategy = tf.distribute.MirroredStrategy(cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
 
  **9. Output of the script**
 1. The model weights can be found inside my_model folder.
@@ -315,7 +317,7 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
 
 ---
 
-# For Ubuntu
+# **For Ubuntu**
 
 ## **GPU-based implementation**
 
@@ -381,6 +383,8 @@ Multi-GPU output:\
 ![image](Images/multigpu_ubuntu_output.png)
 
 ---
+
+# Videos
 
 **Walkthrough Video for Windows CPU-based implementation**
 
