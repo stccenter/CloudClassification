@@ -153,6 +153,7 @@ The GPU-based implementation is tested in three environments.
 
 **2. AWS g4dn instance with NVIDIA Tesla T4**
 **Install NVIDIA drivers on Windows instances**
+
 Refer this [AWS help document](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/install-nvidia-driver.html#nvidia-gaming-driver) to follow the installation options.
 The following steps are based on G4dn instance.
  **1. Download and install the NVIDIA driver**
@@ -249,6 +250,11 @@ The following steps are based on G4dn instance.
 
             set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode-multi-gpu.py
 
+**NVIDIA SMI Screenshot**
+
+![image](Images/nvidia-smi_multigpu_windows.PNG)
+
+
 **Note:** While running the multi gpu code if you encounter this issue: No OpKernel was registered to support Op 'NcclAllReduce, please change line #109 to
 strategy = tf.distribute.MirroredStrategy(cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
 
@@ -265,8 +271,17 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
    | POD    | POFD   | FAR    | Bias   | CSI    | Accuracy |
    |--------|--------|--------|--------|--------|----------|
    | 0.6816 | 0.0436 | 0.1134 | 0.7687 | 0.6269 | 0.8648   | 
-3. The accuracy of the model is 86.48% and it took 243.54 minutes to finish.
-   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/output_gpu_aws.PNG)
+3. **For single GPU**
+   It took 3976.503949403763 seconds  to finish.
+
+   **For multi GPU**
+   It took 9036.8576 seconds  to finish.
+
+   ![image](Images/multigpu_windows_output.PNG)
+
+
+
+  
 
 ---
 
@@ -383,7 +398,7 @@ python cloudcode-multi-gpu.py
 ```
 **Note**:The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.
 
-Multi-GPU output:\
+**NVIDIA SMI Screenshot**
 ![image](Images/multigpu_ubuntu_output.png)
 
 ---
