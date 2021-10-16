@@ -153,8 +153,8 @@ The GPU-based implementation is tested in three environments.
 **2. AWS g4dn instance with NVIDIA Tesla T4**
 **Install NVIDIA drivers on Windows instances**
 
-Refer this [AWS help document](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/install-nvidia-driver.html#nvidia-gaming-driver) to follow the installation options.
-The following steps are based on G4dn instance.
+The following steps are based on [AWS help document](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/install-nvidia-driver.html#nvidia-gaming-driver) to install NVIDIA driver in g4dn instance.
+
  **1. Download and install the NVIDIA driver**
    1. Connect to the Windows instance.
    2. Go to Start menu and open a PowerShell window.
@@ -260,10 +260,6 @@ strategy = tf.distribute.MirroredStrategy(cross_device_ops=tf.distribute.Hierarc
    **Note:** In the above command set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py uses 4 GPUs. 
 For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudclassify-gpu.py**. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
 
-Note: Line #17 shows all the physical GPU devices available to TensorFlow. You should see device_type: “GPU” in the list of devices.
-
-![image](https://github.com/stccenter/CloudClassification/blob/main/Images/gpu.PNG)
-
  **8. Output**
 1. The model weights can be found inside my_model folder.
 2. The accuracy metrics (highlighted in yellow) such as probability of detection (POD), probability of false detection (POFD), false alarm ratio (FAR), bias, critical success index (CSI), and model accuracy and runtime (in seconds) will be printed in the terminal when the process finishes.
@@ -271,16 +267,14 @@ Note: Line #17 shows all the physical GPU devices available to TensorFlow. You s
    |--------|--------|--------|--------|--------|----------|
    | 0.6816 | 0.0436 | 0.1134 | 0.7687 | 0.6269 | 0.8648   | 
 3. **For single GPU**
+   
    It took 3976.503949403763 seconds  to finish.
 
    **For multi GPU**
+
    It took 9036.8576 seconds  to finish.
 
    ![image](Images/multigpu_windows_output.PNG)
-
-
-
-  
 
 ---
 
@@ -398,6 +392,7 @@ python cloudcode-multi-gpu.py
 **Note**:The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.
 
 **NVIDIA SMI Screenshot**
+
 ![image](Images/multigpu_ubuntu_output.png)
 
 ---
