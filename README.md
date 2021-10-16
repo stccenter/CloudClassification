@@ -132,11 +132,10 @@ The GPU-based implementation is tested in three environments.
             
             pip install -r requirements_gpu.txt
 
- **8. Verify the installation of GPU and run the script**
+ **8. Run the script**
    1. In command prompt, run the python script using below command.
-
-      **For single GPU**
    
+
             set CUDA_VISIBLE_DEVICES=0 & python cloudclassify-gpu.py
 
 
@@ -238,7 +237,7 @@ The following steps are based on G4dn instance.
    1. Download data using this <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
    2. Download all four folders to your local machine inside project folder.
    
- **7. Verify the installation of GPU and run the script**
+ **7. Run the script**
    1. In command prompt, run the python script using below command.
    
       **For single GPU**
