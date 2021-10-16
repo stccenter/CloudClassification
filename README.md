@@ -139,12 +139,6 @@ The GPU-based implementation is tested in three environments.
    
             set CUDA_VISIBLE_DEVICES=0 & python cloudclassify-gpu.py
 
-      **For multi-GPU**
-
-            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode-multi-gpu.py
-
-**Note:** While running the multi gpu code if you encounter this issue: No OpKernel was registered to support Op 'NcclAllReduce, please change line #109 to
-strategy = tf.distribute.MirroredStrategy(cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
 
  **9. Output of the script**
 1. The model weights can be found inside my_model folder.
@@ -246,7 +240,17 @@ The following steps are based on G4dn instance.
  **7. Verify the installation of GPU and run the script**
    1. In command prompt, run the python script using below command.
    
-            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py
+      **For single GPU**
+
+            set CUDA_VISIBLE_DEVICES=0 & python cloudclassify-gpu.py
+
+            
+      **For multi-GPU**
+
+            set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudcode-multi-gpu.py
+
+**Note:** While running the multi gpu code if you encounter this issue: No OpKernel was registered to support Op 'NcclAllReduce, please change line #109 to
+strategy = tf.distribute.MirroredStrategy(cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
 
    **Note:** In the above command set CUDA_VISIBLE_DEVICES=0,1,2,3 & python cloudclassify-gpu.py uses 4 GPUs. 
 For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudclassify-gpu.py**. Here 'X' , 'Y', and 'Z' are variables specifying the number of GPUs you want to use.
