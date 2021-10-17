@@ -8,7 +8,7 @@ This project is implemented in two methods:
 
 ## **Software requirements**
 1. Python 3.7 or 3.8
-2. CUDA
+2. CUDA 10.2
 3. TensorFlow 2.2
 
 **Note**: Python 3.9 is incompatible with Tensorflow 2.2.0. Please download Python 3.7 or 3.8.
@@ -412,6 +412,9 @@ python cloudcode-multi-gpu.py
 [<img src="Images/singlegpu_windows_video.jpg" width="60%">](https://www.youtube.com/watch?v=Tj6OV5-izXw)
 
 **Walkthrough Video for AWS Windows multi-GPU instance**
+
+[<img src="Images/singlegpu_windows_video.jpg" width="60%">](https://youtu.be/hjkPz3yffmk)
+
 
 
 
