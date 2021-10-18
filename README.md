@@ -8,8 +8,9 @@ This project is implemented in two methods:
 
 ## **Software requirements**
 1. Python 3.7 or 3.8
-2. CUDA 10.2
-3. TensorFlow 2.2
+2. NVIDIA 450.51.06 (For Ubuntu Server 18.04) and 441.12 (For Windows Server 2019)
+4. CUDA 10.2
+5. TensorFlow 2.2
 
 **Note**: Python 3.9 is incompatible with Tensorflow 2.2.0. Please download Python 3.7 or 3.8.
 
