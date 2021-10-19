@@ -106,7 +106,8 @@ len(x_train)
 INPUT_DIM = N_PREDICTOR
 
 # Create a MirroredStrategy.
-strategy = tf.distribute.MirroredStrategy(devices=["/gpu:0", "/gpu:1"])
+#strategy = tf.distribute.MirroredStrategy(devices=["/gpu:0", "/gpu:1"])
+strategy = tf.distribute.MirroredStrategy()
 print("Number of devices: {}".format(strategy.num_replicas_in_sync))
 
 # Open a strategy scope.

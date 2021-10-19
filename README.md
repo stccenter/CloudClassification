@@ -137,7 +137,7 @@ The GPU-based implementation is tested in three environments.
    1. In command prompt, run the python script using below command.
    
 
-            set CUDA_VISIBLE_DEVICES=0 & python cloudclassify-gpu.py
+            set CUDA_VISIBLE_DEVICES=0 & python cloudcode-multi-gpu.py
 
 
  **9. Output of the script**
@@ -243,7 +243,7 @@ The following steps are based on [AWS help document](https://docs.aws.amazon.com
    
       **For single GPU**
 
-            set CUDA_VISIBLE_DEVICES=0 & python cloudclassify-gpu.py
+            set CUDA_VISIBLE_DEVICES=0 & python cloudcode-multi-gpu.py
 
             
       **For multi-GPU**
@@ -382,13 +382,14 @@ sudo cp libcupti.so.10.2 libcupti.so.10.1
 **For single GPU**
 
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python cloudclassify-gpu.py
+CUDA_VISIBLE_DEVICES=0 python cloudcode-multi-gpu.py
 ```
 
 **For multi-GPU**
 
 ```
-python cloudcode-multi-gpu.py
+CUDA_VISIBLE_DEVICES=0,1,2,3 python cloudcode-multi-gpu.py
+
 ```
 **Note**:The program will output the runtime alongside metrics such as accuracy after it finishes training. You may use the nvidia-smi command to check GPU load.
 
