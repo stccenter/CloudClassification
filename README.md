@@ -22,6 +22,9 @@ This project is implemented in two methods:
 - [**For Ubuntu**](#for-ubuntu)
   - [**GPU-based implementation**](#gpu-based-implementation-1)
 - [Videos](#videos)
+  - [**Walkthrough video for AWS Ubuntu Server multi-GPU instance**](#walkthrough-video-for-aws-ubuntu-server-multi-gpu-instance)
+  - [**Walkthrough Video for AWS Windows multi-GPU instance**](#walkthrough-video-for-aws-windows-multi-gpu-instance)
+  - [**Walkthrough Video for AWS Windows single GPU instance**](#walkthrough-video-for-aws-windows-single-gpu-instance)
 
 # **For Windows**
 
@@ -400,6 +403,17 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python cloudcode-multi-gpu.py
 ---
 
 # Videos
+## **Walkthrough video for AWS Ubuntu Server multi-GPU instance**
+[<img src="Images/multigpu_ubuntu_video.jpg" width="60%">](https://youtu.be/Xdqn2ntvwTM)
+
+## **Walkthrough Video for AWS Windows multi-GPU instance**
+
+[<img src="Images/singlegpu_windows_video.jpg" width="60%">](https://youtu.be/hjkPz3yffmk)
+
+## **Walkthrough Video for AWS Windows single GPU instance**
+
+[<img src="Images/singlegpu_windows_video.jpg" width="60%">](https://www.youtube.com/watch?v=Tj6OV5-izXw)
+
 
 **Walkthrough Video for Windows CPU-based implementation**
 
@@ -409,13 +423,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python cloudcode-multi-gpu.py
 
 [<img src="https://github.com/stccenter/CloudClassification/blob/main/Images/RunTimeGPU.png" width="60%">](https://youtu.be/Pzlsyb4s5yQ)
 
-**Walkthrough Video for AWS Windows single GPU instance**
 
-[<img src="Images/singlegpu_windows_video.jpg" width="60%">](https://www.youtube.com/watch?v=Tj6OV5-izXw)
-
-**Walkthrough Video for AWS Windows multi-GPU instance**
-
-[<img src="Images/singlegpu_windows_video.jpg" width="60%">](https://youtu.be/hjkPz3yffmk)
 
 
 
