@@ -58,11 +58,11 @@ Now, we are all set to run the script.
 Run the cloudclassify-cpu.py script using below command. This script accepts an argument called flag (-f). The default value of the flag is detection. 
 1. In command prompt, run the script with default value "detection"
 
-            python cloudclassify-cpu.py
+            set CUDA_VISIBLE_DEVICES='' & python cloudclassify-cpu.py
 
 2. In command prompt, run the script with flag "rainy cloud"
 
-            python cloudclassify-cpu.py -f "rainy cloud"
+            set CUDA_VISIBLE_DEVICES='' & python cloudclassify-cpu.py -f "rainy cloud"
          
 **7. Output**
 1. The model weights can be found in inside my_model folder.
