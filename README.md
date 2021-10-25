@@ -155,6 +155,7 @@ The GPU-based implementation is tested in three environments.
 ---
 
 **2. AWS g4dn instance with NVIDIA Tesla T4**
+
 **Install NVIDIA drivers on Windows instances**
 
 The following steps are based on [AWS help document](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/install-nvidia-driver.html#nvidia-gaming-driver) to install NVIDIA driver in g4dn instance.
@@ -176,14 +177,12 @@ The following steps are based on [AWS help document](https://docs.aws.amazon.com
                   }
                }
 
-       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/pscmd.PNG)
-
    4. Navigate to the desktop->NVIDIA  folder->windows.
    5. You will find 441.12_grid_vgaming_server2016_server2019_64bit_international.exe file inside windows directory.
-   7. Double-click the installation file (exe) to launch it. 
-   8. Follow the instructions to install the driver
-   9. Reboot your instance as required. 
-   10. To verify that the GPU is available, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
+   6. Double-click the installation file (exe) to launch it. 
+   7. Follow the instructions to install the driver
+   8. Reboot your instance as required. 
+   9.  To verify that the GPU is available, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
    
    ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
 
