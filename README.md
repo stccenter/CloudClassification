@@ -165,7 +165,7 @@ The following steps are based on [AWS help document](https://docs.aws.amazon.com
    3. Copy and paste the below in Powershell. This command will download driver inside Desktop.
    
                $Bucket = "nvidia-gaming"
-               $KeyPrefix = "windows/latest"
+               $KeyPrefix = "windows"
                $LocalPath = "$home\Desktop\NVIDIA"
                $Objects = Get-S3Object -BucketName $Bucket -KeyPrefix $KeyPrefix -Region us-east-1
                foreach ($Object in $Objects) {
@@ -178,16 +178,16 @@ The following steps are based on [AWS help document](https://docs.aws.amazon.com
 
        ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/pscmd.PNG)
 
-   4. Navigate to the desktop->NVIDIA  folder->windows->latest.
-   5. Extract the zip folder.
-   6. Double-click the installation file (exe) to launch it. 
-   7. Follow the instructions to install the driver
-   8. Reboot your instance as required. 
-   9. To verify that the GPU is working properly, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
+   4. Navigate to the desktop->NVIDIA  folder->windows.
+   5. You will find 441.12_grid_vgaming_server2016_server2019_64bit_international.exe file inside windows directory.
+   7. Double-click the installation file (exe) to launch it. 
+   8. Follow the instructions to install the driver
+   9. Reboot your instance as required. 
+   10. To verify that the GPU is working properly, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
    
       ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
 
-   10. Create a registry value in the HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global key with the name vGamingMarketplace, the type DWord, and the value 2.
+   11. Create a registry value in the HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global key with the name vGamingMarketplace, the type DWord, and the value 2.
        1. Use Powershell and run the below command.
 
                New-ItemProperty -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global" -Name "vGamingMarketplace" -PropertyType "DWord" -Value "2"
@@ -196,11 +196,11 @@ The following steps are based on [AWS help document](https://docs.aws.amazon.com
 
                reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v vGamingMarketplace /t REG_DWORD /d 2
 
-   11. Use Powershell and run the below command to download the certification file.
+   12. Use Powershell and run the below command to download the certification file.
    
                Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertWindows_2021_10_2.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
 
-   12. Reboot the instance.
+   13. Reboot the instance.
 
  **2. Install CUDA**
    1. Go to [NVIDIA website](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64) and select the version of CUDA that you need.
