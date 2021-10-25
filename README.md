@@ -162,7 +162,7 @@ The following steps are based on [AWS help document](https://docs.aws.amazon.com
  **1. Download and install the NVIDIA driver**
    1. Connect to the Windows instance.
    2. Go to Start menu and open a PowerShell window.
-   3. Copy and paste the below Powershell command. This command will download driver inside Desktop.
+   3. Copy and paste the below in Powershell. This command will download driver inside Desktop.
    
                $Bucket = "nvidia-gaming"
                $KeyPrefix = "windows/latest"
