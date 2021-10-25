@@ -183,9 +183,9 @@ The following steps are based on [AWS help document](https://docs.aws.amazon.com
    7. Double-click the installation file (exe) to launch it. 
    8. Follow the instructions to install the driver
    9. Reboot your instance as required. 
-   10. To verify that the GPU is working properly, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
+   10. To verify that the GPU is available, check Device Manager. Go to Start menu and open Device Manager. Expand Display adapters.
    
-      ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
+   ![image](https://github.com/stccenter/CloudClassification/blob/main/Images/teslagpu.PNG)
 
    11. Create a registry value in the HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global key with the name vGamingMarketplace, the type DWord, and the value 2.
        1. Use Powershell and run the below command.
