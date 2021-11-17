@@ -334,6 +334,62 @@ For example, **set CUDA_VISIBLE_DEVICES=X,Y,Z,... & python cloudclassify-gpu.py*
 
 # **For Ubuntu**
 
+
+*  **Step 1**: Create Conda Environment
+
+Enter This command to create the conda environment:
+
+```
+conda create -n cloud-env python=3.8
+```
+
+*  **Step 2**: Activate the Conda Environment
+
+To activate the conda environment you created, enter this command:
+
+```
+conda activate cloud-env
+```
+
+Followed by this command to install pip to the conda environment:
+
+```
+conda install pip
+```
+
+*  **Step 3**: Download the Training Data and Required python packages
+
+Download the training data at this [link](https://drive.google.com/file/d/13W_etsy1A4czDTDHrPVliOImAfTlRSze/view) and place it in a folder named cloudpackage on your desktop 
+
+Install the required packages using the command:
+
+```
+pip install -r requirements_cpu.txt
+```
+
+[Download the zip](https://github.com/stccenter/PM2.5Retrieval/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the cloudpackage folder
+
+
+*  **Step 4**: Run the Script
+
+To change to the desktop directory, Enter the Command: 
+
+```
+cd Desktop
+```
+
+To change to the directory to your folder, Enter the Command: 
+
+```
+cd cloudpackage
+```
+
+To run the Script enter the command: 
+
+```
+python cloudclassify-cpu.py 
+```
+
 ## **GPU-based implementation**
 
 **Step 1** The AWS Deep Learning AMI comes with different versions of CUDA. Please switch to the correct CUDA version, **10.2**, by using the following commands:
