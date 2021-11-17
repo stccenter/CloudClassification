@@ -390,6 +390,8 @@ To run the Script enter the command:
 python cloudclassify-cpu.py 
 ```
 
+Estimated TIme: 2hr 48min
+
 ## **GPU-based implementation**
 
 **Step 1** The AWS Deep Learning AMI comes with different versions of CUDA. Please switch to the correct CUDA version, **10.2**, by using the following commands:
