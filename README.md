@@ -361,16 +361,9 @@ conda install pip
 
 Download the training data at this [link](https://drive.google.com/file/d/13W_etsy1A4czDTDHrPVliOImAfTlRSze/view) and place it in a folder named cloudpackage on your desktop 
 
-Install the required packages using the command:
-
-```
-pip install -r requirements_cpu.txt
-```
-
 [Download the zip](https://github.com/stccenter/PM2.5Retrieval/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the cloudpackage folder
 
-
-*  **Step 4**: Run the Script
+[Download the zip](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g)containing the bin file and unzip the contents into the cloudpackage folder
 
 To change to the desktop directory, Enter the Command: 
 
@@ -384,13 +377,22 @@ To change to the directory to your folder, Enter the Command:
 cd cloudpackage
 ```
 
+Install the required packages using the command:
+
+```
+pip install -r requirements_cpu.txt
+```
+
+*  **Step 4**: Run the Script
+
 To run the Script enter the command: 
 
 ```
 python cloudclassify-cpu.py 
 ```
 
-Estimated TIme: 2hr 48min
+
+Estimated Time: 2hr 48min
 
 ## **GPU-based implementation**
 
