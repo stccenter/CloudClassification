@@ -361,11 +361,12 @@ conda install pip
 
 Download the training data at this [link](https://drive.google.com/file/d/13W_etsy1A4czDTDHrPVliOImAfTlRSze/view) and place it in a folder named cloudpackage on your desktop 
 
-[Download the zip](https://github.com/stccenter/PM2.5Retrieval/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the cloudpackage folder
+[Download the zip](https://github.com/stccenter/CloudClassification/archive/refs/heads/main.zip) containing your script and place the contents of the zip in the cloudpackage folder
 
 [Download the zip](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g)containing the bin file and unzip the contents into the cloudpackage folder
 
 To change to the desktop directory, Enter the Command: 
+
 
 ```
 cd Desktop
