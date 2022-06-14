@@ -46,7 +46,7 @@ Copy requirements.txt file from cloned repository and place it inside cloudclass
             pip install -r requirements_cpu.txt     
 
 **4. Download the data**
-1. Click the [link](https://drive.google.com/drive/u/0/folders/1d9uS1EDtIkmTHu3pDhJgR7mbqVS2gZNM) and download the cloud_pc.sav file.
+1. Click the [link](https://drive.google.com/file/d/119hIFO_9UPyS-Iv1TKQzGehu3OPw0CzF/view?usp=sharing) and download the cloud_pc.sav file.
 2. Place the downloaded "cloud_pc.sav" file inside cloudclassify folder
 
 **5. Download train and test data**
