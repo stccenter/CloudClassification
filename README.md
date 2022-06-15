@@ -50,7 +50,7 @@ Copy requirements.txt file from cloned repository and place it inside cloudclass
 2. Place the downloaded "cloud_pc.sav" file inside cloudclassify folder
 
 **5. Download train and test data**
-   1. Download four folders train_10mm, tes_10mm, logs, and florence_10mm placed in the <a href="https://drive.google.com/drive/folders/1XqrxJd6rGgd0N2QJXRd1fm5aCZiSZClR?usp=sharing" target="_blank">link</a>.
+   1. Download four folders train_10mm, tes_10mm, logs, and florence_10mm placed in the <a href="https://drive.google.com/drive/folders/1icMij0hMy9vWL-4SQAe8ZaL3Km0HB-oB?usp=sharing" target="_blank">link</a>.
    2. Extract the downloaded folder. Copy the four folders and paste them inside your cloudclassify folder.
    
 **6. Run the script**
